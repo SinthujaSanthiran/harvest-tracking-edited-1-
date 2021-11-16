@@ -87,8 +87,8 @@ class Users extends Component {
                                     <TableCell>{item.vegetable_type}</TableCell>
                                     <TableCell>{item.amount} Kg</TableCell>
                                     <TableCell>{item.address}</TableCell>
-                                    <TableCell>{item.plant_date.substring(0,10)}</TableCell>
-                                    <TableCell>{item.harvest_date.substring(0,10)}</TableCell>
+                                    <TableCell>{item.plant_date && item.plant_date.substring(0,10)}</TableCell>
+                                    <TableCell>{item.harvest_date && item.harvest_date.substring(0,10)}</TableCell>
                                 </TableRow>)
 
                         })
